@@ -42,6 +42,12 @@ object Utils {
 
     }
 
+
+    /**
+     * @throws Exception
+     *
+     */
+
     fun startNewActivityUsingAny(context: Context, clazz: Class<Any>) {
 
         val intent = Intent(context, clazz)
