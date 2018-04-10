@@ -224,7 +224,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 //                }
 
 
-                Utils.startNewActivity(view.context, SecondActivity::class.java)
+                Utils.startNewActivity(this@MainActivity, SecondActivity::class.java)
+
+//                Utils.startNewActivity(view.context, SecondActivity::class.java)
+
 
 
 
