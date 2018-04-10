@@ -32,6 +32,15 @@ object Utils {
 
     }
 
+    fun startNewActivityUsingAny(context: Context, clazz: Class<Any>) {
+
+        val intent = Intent(context, clazz)
+        // start your next activity
+        context.startActivity(intent)
+
+    }
+
+
 
 //    fun startNewActivity(context:Context, cls: Class<T>){
 //        context.startActivity(Intent(context,cls))

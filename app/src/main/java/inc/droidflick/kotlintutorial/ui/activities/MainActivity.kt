@@ -227,6 +227,17 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 Utils.startNewActivity(view.context, SecondActivity::class.java)
 
 
+
+                /**
+                 * @param throws Exception
+                 *
+                 * Utils.startNewActivityUsingAny(view.context, SecondActivity::class.java.javaClass)
+                 */
+
+
+
+
+
                 Log.d("Kotlin", "Mera Click")
             }
 
