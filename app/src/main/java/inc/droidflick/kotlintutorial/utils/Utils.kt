@@ -52,6 +52,9 @@ object Utils {
 
 
 
+
+    //Utils.startNewActivity(context,yourclass::class.java as Class<T>)
+
 //    fun startNewActivity(context:Context, cls: Class<T>){
 //        context.startActivity(Intent(context,cls))
 //    }
