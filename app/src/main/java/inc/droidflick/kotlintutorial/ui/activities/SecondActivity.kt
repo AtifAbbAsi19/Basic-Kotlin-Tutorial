@@ -1,5 +1,6 @@
 package inc.droidflick.kotlintutorial.ui.activities
 
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import inc.droidflick.kotlintutorial.R
@@ -9,12 +10,20 @@ import inc.droidflick.kotlintutorial.databinding.ActivitySecondBinding
 class SecondActivity : BaseActivity<ActivitySecondBinding>() {
 
 
+
+
+
+
     override fun setLayout(): Int {
         return R.layout.activity_second
     }
 
 
     override fun initViews() {
+
+
+
+
     }
 
     override fun initViewsListeners() {

@@ -18,6 +18,7 @@ import inc.droidflick.kotlintutorial.databinding.ActivityMainBinding
 import inc.droidflick.kotlintutorial.model.User
 import inc.droidflick.kotlintutorial.ui.interfaces.MeraOnClickListener
 import inc.droidflick.kotlintutorial.utils.Utils
+import inc.droidflick.kotlintutorial.utils.UtilsWithConstructor
 
 
 /*
@@ -225,6 +226,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
 
                 Utils.startNewActivity(this@MainActivity, SecondActivity::class.java)
+
+
+//                UtilsWithConstructor(this@MainActivity).startNewActivity(SecondActivity::class.java)
+
 
 //                Utils.startNewActivity(view.context, SecondActivity::class.java)
 
