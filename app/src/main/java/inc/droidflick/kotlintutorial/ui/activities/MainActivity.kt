@@ -224,10 +224,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 //                }
 
 
-
-
-
-                Utils.startNewActivity(view.context,SecondActivity::class.java)
+                Utils.startNewActivity(view.context, SecondActivity::class.java)
 
 
                 Log.d("Kotlin", "Mera Click")
