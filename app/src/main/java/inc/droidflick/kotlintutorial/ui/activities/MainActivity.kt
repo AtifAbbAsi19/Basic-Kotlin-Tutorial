@@ -1,6 +1,7 @@
 package inc.droidflick.kotlintutorial.ui.activities
 
 
+import android.content.Intent
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import inc.droidflick.kotlintutorial.databinding.ActivityMainBinding
 import inc.droidflick.kotlintutorial.model.User
 import inc.droidflick.kotlintutorial.ui.interfaces.MeraOnClickListener
+import inc.droidflick.kotlintutorial.utils.Utils
 
 
 /*
@@ -186,40 +188,47 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         btnClickMe.setOnClickListener(object : MeraOnClickListener, View.OnClickListener {
             override fun onClick(view: View) {
 
-                displayView.setText(ediText.text.toString())
+//                displayView.setText(ediText.text.toString())
+//
+//                if (ediText.text.toString().length > 0) {
+//
+//                    value = ediText.text.toString()
+//
+//                    if (check) {
+//
+//                        listExampleAdapter.updateAdapter(value)
+//                    } else {
+//
+//                        var user: User
+//
+////                        if (counter == 0) {
+////                            if (userArrayList == null) {
+////                                userArrayList = ArrayList<User>()
+////                            }
+////                            userArrayList.clear()
+////                        }
+//
+//                        counter++;
+//
+//                        user = User(counter, value)
+//
+//                        //userArrayList.add(user)
+//
+////                    recyclerExampleAdapter.remove()
+//
+//                        recyclerExampleAdapter.insert(user)
+//                        //recyclerExampleAdapter.updateAdapter(userArrayList)
+//                    }
+//
+//
+//                }
 
-                if (ediText.text.toString().length > 0) {
-
-                    value = ediText.text.toString()
-
-                    if (check) {
-
-                        listExampleAdapter.updateAdapter(value)
-                    } else {
-
-                        var user: User
-
-//                        if (counter == 0) {
-//                            if (userArrayList == null) {
-//                                userArrayList = ArrayList<User>()
-//                            }
-//                            userArrayList.clear()
-//                        }
-
-                        counter++;
-
-                        user = User(counter, value)
-
-                        //userArrayList.add(user)
-
-//                    recyclerExampleAdapter.remove()
-
-                        recyclerExampleAdapter.insert(user)
-                        //recyclerExampleAdapter.updateAdapter(userArrayList)
-                    }
 
 
-                }
+
+
+                Utils.startNewActivity(view.context,SecondActivity::class.java)
+
 
                 Log.d("Kotlin", "Mera Click")
             }
