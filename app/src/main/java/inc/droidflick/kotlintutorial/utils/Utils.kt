@@ -10,6 +10,8 @@ import android.content.Intent
 
 object Utils {
 
+   //https://stackoverflow.com/questions/49745488/how-to-start-a-new-activity-from-a-non-activity-class-in-android-kotlin/49746041#49746041
+
      fun startNewActivity(context: Context, clazz: Class<*>) {
 
             val intent = Intent(context, clazz)
@@ -19,6 +21,20 @@ object Utils {
             context.startActivity(intent)
 
         }
+
+
+//    companion object {
+//        fun startActivity(context: Context, clazz: Class<*>) {
+//
+//            val intent = Intent(context, clazz)
+//            // To pass any data to next activity
+//            //            intent.putExtra("keyIdentifier", value)
+//            // start your next activity
+//            context.startActivity(intent)
+//
+//        }
+//    }
+
 
 
 }
