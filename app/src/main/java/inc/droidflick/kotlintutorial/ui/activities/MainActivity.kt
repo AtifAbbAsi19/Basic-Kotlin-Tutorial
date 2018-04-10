@@ -232,6 +232,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                  * @param throws Exception
                  *
                  * Utils.startNewActivityUsingAny(view.context, SecondActivity::class.java.javaClass)
+                 *
                  */
 
 

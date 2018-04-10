@@ -9,6 +9,16 @@ import android.os.Bundle
  */
 
 
+/**
+ *
+ * @param Object for Singleton pattren
+ *
+ * @static object
+ *
+ *
+ */
+
+
 object Utils {
 
     //https://stackoverflow.com/questions/49745488/how-to-start-a-new-activity-from-a-non-activity-class-in-android-kotlin/49746041#49746041
